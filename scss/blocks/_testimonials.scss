@@ -72,6 +72,9 @@
                     width: 15px;
                     height: 16px;
                     margin-left: 6px;
+                    cursor: default;
+                    border: 0;
+                    background-repeat: no-repeat;
                         &::before {
                             content: '';
                             opacity: 0;
