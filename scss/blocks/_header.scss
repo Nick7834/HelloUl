@@ -1,0 +1,144 @@
+.nav-body {
+    display: flex;
+    min-height: 110px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_logo {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+
+    color: #000000;
+}
+
+.header-nav {
+
+   ul {
+    display: flex;
+    margin: 0 auto;
+   }
+
+   li {
+    margin: 0 33px;
+   }
+
+   .link {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #050038;
+    transition: .5s;
+        &:hover {
+            color: #5448bd;
+        }
+   }
+}
+
+.button, .button-mob  {
+        display: flex;
+        align-items: center;
+    &_header-one, &_header-mob-one  {
+        cursor: pointer;
+        border: 0;
+        background: none;
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-right: 35px;
+
+        color: #050038;
+        transition: .5s;
+            &:hover {
+                color: #5448bd;
+            }
+    }
+
+    &_header-two, &_header-mob-two {
+        cursor: pointer;
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #FFFFFF;
+
+        background: #0555FF;
+        border-radius: 30px;
+        border: 0;
+        padding: 13px 36px;
+        transition: .5s;
+            &:hover {
+                background: #3a78ff;
+            }
+    }
+}
+
+.button-mob {
+    display: none;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 42px;
+    height: 25px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+     &__burger-line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 5px;
+        transform: translateY(-50%);
+        background-color: #4a4a4a;
+        border-radius: 10px;
+        transition: opacity 0.3s ease-in-out;
+     }
+
+     &::before, &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #4a4a4a;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, bottom 0.3s ease-in-out;
+     }
+        &::before {
+            top: 0;
+        }
+            &::after {
+                bottom: 0;
+            }
+
+     .burger--active &__burger-line {
+        opacity: 0;
+     }
+
+}
+
+.burger--active {
+    &::before {
+     top: 50%;
+     transform: rotate(45deg);
+    }
+    &::after {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+ }
+
+ .stop-scroll {
+    overflow: hidden;
+}
