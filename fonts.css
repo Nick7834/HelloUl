@@ -1,0 +1,43 @@
+/* Medium */
+
+@font-face {
+    font-family: 'CircularStd';
+    src: local('CircularStd'),
+         url('../fonts/CircularStd-Medium.ttf') format('truetype'),
+         url('../fonts/CircularStd-Medium.woff') format('woff'); 
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'CircularStd';
+    src: local('CircularStd'),
+         url('../fonts/CircularStd-Bold.ttf') format('truetype'),
+         url('../fonts/CircularStd-Bold.woff') format('woff'); 
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Black */
+
+@font-face {
+    font-family: 'CircularStd';
+    src: local('CircularStd'),
+         url('../fonts/CircularStd-Black.ttf') format('truetype'),
+         url('../fonts/CircularStd-Black.woff') format('woff'); 
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Book */
+
+@font-face {
+    font-family: 'CircularStd';
+    src: local('CircularStd'),
+         url('../fonts/CircularStd-Book.ttf') format('truetype'),
+         url('../fonts/CircularStd-Book.woff') format('woff'); 
+    font-weight: normal;
+    font-style: normal;
+}
