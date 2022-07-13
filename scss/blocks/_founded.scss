@@ -1,0 +1,316 @@
+.founded {
+    padding-bottom: 256px;
+}
+.founded_body {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about {
+    padding: 100px 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &_a-title {
+        max-width: 895px;
+        font-family: Circular Std;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 53px;
+    
+        color: #050038;
+    }
+
+    &_a-text {
+        padding: 30px 0 50px 0;
+        max-width: 778px;
+
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+
+        color: #5B5E6D;
+    }
+
+    &_a-button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+
+        padding: 9px 21px 9px 24px;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 32px;
+
+        color: #0555FF;
+        background: rgba(5, 85, 255, 0.1);
+        border-radius: 30px;
+        transition: all .5s;
+         &::before {
+            content: '';
+            background: url(../img/button-about.svg);
+            width: 27px;
+            height: 27px;
+            margin-right: 12px;
+         }
+         &:hover {
+            background: #3a78ff;
+            color: aliceblue;
+         }
+    }
+}
+
+// Develop
+
+.develop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.develop-left {
+    padding-right: 172px;
+    &_left-title {
+        font-family: Circular Std;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 91px;
+
+        color: #050038;
+    }
+
+    &_left-text {
+        padding: 20px 0 40px 0;
+        max-width: 510px;
+
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+
+        color: #5B5E6D;
+    }
+
+    &_left-a {
+        position: relative;
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+
+        color: #000000;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            margin-left: 3px;
+            border-bottom: 2px solid #0555FF;
+            width: 0;
+            height: 0;
+            transition: width .5s ease-out;
+         }
+         &:hover {
+            &::after {
+                width: 216px;
+            }
+         }
+            
+    }
+}
+
+.develop-right {
+    position: relative;
+
+    .right-img {
+        position: relative;
+        padding-right: 17px;
+
+        &::before {
+            content: '';
+            right: 0;
+            position: absolute;
+            display: block;
+            max-width: 100%;
+            width: 235px;
+            height: 480px;
+            z-index: -1;
+
+            background: rgba(255, 255, 255, 0.65);
+            border-radius: 10px;
+         }
+
+        &_img-right {
+            border-radius: 10px;
+            box-shadow: -20px 20px 60px rgba(121, 164, 255, 0.3);
+        }
+    }
+}
+
+.block-one {
+    position: absolute;
+    right: calc(-13px + -40 * ((100vw - 320px)/ 1350));
+    top: 424px;
+    z-index: -2;
+    width: 188.41px;
+    height: 94px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: #FF9D0A;
+    transform: rotate(-142.02deg);
+    animation: two 4s infinite alternate ease-in-out;
+}
+
+.block-two {
+    position: absolute;
+    top: 0;
+    right: calc(8px + -40 * ((100vw - 320px)/ 1350));
+    top: 26px;
+    z-index: -2;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background: #6FDAC0;
+    animation: one 4s infinite alternate ease-in-out;
+}
+
+.block-three {
+    position: absolute;
+    bottom: -62px;
+    left: -51px;
+    z-index: -2;
+    background: url(../img/img-card-right.svg);
+    width: 150.32px;
+    height: 158.09px;
+    animation: 1s linear 0s normal none infinite running three;
+    animation-duration: 20s;
+}
+
+    @keyframes one {
+        0% {
+        transform: translateY(30%);
+        }
+        100% {
+        transform: translateY(-30%);
+        }
+    }
+
+    @keyframes two {
+       from {
+        right: -50px;
+       }
+
+       to {
+        right: 50px;
+       }
+    }
+
+
+    @keyframes three {
+        0% {
+        transform: rotate(0deg);
+        }
+        100% {
+        transform: rotate(360deg);
+        }
+    }
+
+// Build
+
+.build {
+    padding: 151px 0;
+    display: flex;
+    align-items: center;
+}
+
+.build-right {
+    padding-left: 172px;
+}
+
+.build-left {
+    position: relative;
+
+    .build-left-img {
+        position: relative;
+        padding-left: 17px;
+
+        &::before {
+            content: '';
+            left: 0;
+            position: absolute;
+            display: block;
+            max-width: 100%;
+            width: 235px;
+            height: 480px;
+            z-index: -1;
+
+            background: rgba(255, 255, 255, 0.65);
+            border-radius: 10px;
+         }
+
+        &_img-left {
+            border-radius: 10px;
+            box-shadow: -20px 20px 60px rgba(121, 164, 255, 0.3);
+        }
+    }
+}
+
+
+.block-one-build {
+    position: absolute;
+    left: calc(-13px + -40 * ((100vw - 320px)/ 1350));
+    top: 424px;
+    z-index: -2;
+    width: 188.41px;
+    height: 94px;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    background: #FF9D0A;
+    transform: matrix(0.79, -0.62, -0.62, -0.79, 0, 0);
+    animation: two-left 4s infinite alternate ease-in-out;
+}
+
+.block-two-build {
+    position: absolute;
+    top: 0;
+    left: calc(8px + -40 * ((100vw - 320px)/ 1350));
+    top: 26px;
+    z-index: -2;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background: #6FDAC0;
+    animation: one 4s infinite alternate ease-in-out;
+}
+
+.block-three-build {
+    position: absolute;
+    bottom: -62px;
+    right: -51px;
+    z-index: -2;
+    background: url(../img/Dot-cube.svg);
+    width: 150.32px;
+    height: 158.09px;
+    animation: 1s linear 0s normal none infinite running three;
+    animation-duration: 20s;
+}
+
+@keyframes two-left {
+    from {
+     left: -50px;
+    }
+
+    to {
+     left: 50px;
+    }
+ }
+
+// update
+
+.update {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

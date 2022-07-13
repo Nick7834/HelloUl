@@ -1,0 +1,410 @@
+    @media (max-width: 1200px ) {
+        .header-nav {   
+            li {
+             margin-right: calc(3px + 30 * ((100vw - 320px)/ 880));
+             margin-left: calc(3px + 30 * ((100vw - 320px)/ 880));
+            }
+         
+            .link {
+             font-size: calc(14px + 2 * ((100vw - 320px)/ 880));
+            }
+         }
+
+         .button {
+
+            &_header-one {
+                font-size: calc(13px + 5 * ((100vw - 970px)/ 880));
+                margin-right: calc(2px + 33 * ((100vw - 320px)/ 880));
+            }
+        
+                &_header-two {
+                    font-size: calc(13px + 5 * ((100vw - 970px)/ 880));
+                }
+        }
+
+        .about {
+           
+            &_a-title {
+                font-size: calc(30px + 12 * (100vw - 320px) / 880);
+                line-height: calc(45px + 8 * (100vw - 320px) / 880);
+            }
+        
+            &_a-text {
+                font-size: calc(18px + 2 * (100vw - 320px) / 880);
+            }
+        }
+
+        // develop
+
+        .block-one, .block-one-build {
+            top: calc(174px + 250 * (100vw - 320px) / 880);
+            width: calc(127px + 61 * (100vw - 320px) / 880);
+            height: calc(63px + 31 * (100vw - 320px) / 880);
+        }
+
+        .develop-left {
+            padding-right: calc(32px + 140 * (100vw - 767px) / 880);
+            &_left-title {
+                font-size: calc(37px + 35 * (100vw - 320px) / 880);
+                line-height: calc(41px + 50 * (100vw - 320px) / 880);
+            }
+        
+            &_left-text {
+                font-size: calc(18px + 2 * (100vw - 320px) / 880);
+            }
+        }
+
+        .develop-right {
+            .right-img {
+                &::before {
+                    height: calc(270px + 210 * (100vw - 320px) / 880);
+                }
+            }
+        }
+
+        // build
+        .build-right {
+            padding-left: calc(32px + 140 * (100vw - 767px) / 880);
+        }
+
+        .build-left {
+
+            .build-left-img {
+                &::before {
+                    height: calc(270px + 210 * (100vw - 320px) / 880);
+                }
+            }
+
+        } 
+
+         // home
+
+         .home-body {
+            padding-top: calc(59px + 12 * ((100vw - 320px)/ 880));
+        }
+        
+        .home-one {
+
+                &_title {
+                    font-size: calc(46px + 50 * ((100vw - 320px)/ 880));
+                    line-height: calc(65px + 55 * ((100vw - 320px)/ 880));
+                }
+        
+                &_text {
+                    font-size: calc(20px + 2 * ((100vw - 320px)/ 880));
+                }
+        }
+        
+        .button-home {
+
+                &_click-one {
+                    font-size: calc(12px + 8 * ((100vw - 320px)/ 880));
+                    margin-right: calc(5px + 15 * ((100vw - 320px)/ 880));
+                }
+        
+                &_click-two{
+                    font-size: calc(12px + 8 * ((100vw - 320px)/ 880));
+                }
+
+                &_text {
+                    font-size: calc(20px + 2 * ((100vw - 320px)/ 880));
+                }
+        }
+
+        // testimonials
+
+        .testimonials {
+            padding: calc(75px + 75 * ((100vw - 320px)/ 880)) 0;
+        }
+
+        .main-block {
+            text-align: center;
+
+            &_testimonials-text {
+                font-size: calc(14px + 2 * ((100vw - 320px)/ 880));
+                line-height: 22px;
+            }
+
+            &_testimonials-tittle {
+                font-size: calc(37px + 35 * ((100vw - 320px)/ 880));
+                line-height: calc(50px + 12 * ((100vw - 320px)/ 880));;
+            }
+        }
+
+        .block-card {
+            padding-top: calc(55px + 15 * ((100vw - 320px)/ 880));
+        }
+
+        // footer
+
+        .form {
+            &_form-title {
+                margin-bottom: 40px;
+                font-size: calc(37px + 35 * ((100vw - 320px)/ 880));
+                line-height: calc(65px + 20 * ((100vw - 320px)/ 880));
+            }
+        }
+
+        .menu-one_address, .block-a_menu-a {
+            font-size: calc(13px + 3 * (100vw - 320px) / 880);
+        }
+
+        .menu-one_menu-title {
+            font-size: calc(20px + 8 * ((100vw - 320px)/ 880));
+            margin-bottom: calc(10px + 23 * ((100vw - 320px)/ 880));
+        }
+
+        .menu-two {
+            gap: calc(40px + 50 * ((100vw - 320px)/ 880));
+        }
+
+        .block-left {
+            display: flex;
+            gap: 30px;
+        }
+        
+
+    }
+
+    @media (max-width: 867px) {
+
+        // footer
+
+        .footer-menu {
+            flex-direction: column;
+            justify-content: center;
+         }
+ 
+         .menu-one {
+             margin-bottom: calc(30px + 20 * ((100vw - 320px)/ 880));
+         }
+
+         .link-name {
+            font-size: calc(18px + 2 * (100vw - 320px) / 880);
+         }
+
+         .link-a {
+            font-size: calc(13px + 3 * (100vw - 320px) / 880);
+        }
+ 
+    }
+
+    @media (max-width: 767px) {
+
+        .nav_logo {
+            position: relative;
+            z-index: 52;
+        }
+
+        .header-nav {
+            position: fixed;
+            text-align: center;
+            left: 0;
+            top: 0;
+            z-index: 50;
+            background: white;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+            padding: 130px 15px 15px 15px;
+            transform: translateY(-100%);
+            opacity: 0;
+            transition: .5s;
+        
+            ul {
+                display: block;
+                margin: 0 auto;
+               }
+
+            li {
+                margin-right: unset;
+                margin-left: unset;
+                margin-bottom: 40px;
+               }
+            
+               .link {
+                font-size: 40px;
+                font-weight: 600;
+                color: rgb(43 57 78);
+               }
+
+               .button-mob {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                 &_header-mob-one {
+                    display: block;
+                    margin-right: 0;
+                    margin-bottom: 25px;
+                    font-size: 30px;
+                 }
+
+                 &_header-mob-two {
+                    display: block;
+                    padding: 20px 40px;
+                    font-size: 25px;
+                 }
+            }
+        }
+
+        .header-nav--click {
+            transform: none;
+            opacity: 1;
+        }
+
+
+        .button {
+            display: none;
+        }
+
+        .burger {
+            display: block;
+            position: relative;
+            z-index: 52;
+        }
+
+        // figures
+
+        .figures-footer_figures-one, .figures-footer_figures-two {
+            width: calc(127px + 61 * (100vw - 320px) / 880);
+            height: calc(63px + 31 * (100vw - 320px) / 880);
+        }
+
+        // founded
+
+        .founded {
+            padding-bottom: calc(136px + 120 * (100vw - 320px) / 880);
+        }
+
+        .develop, .update {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .build {
+            padding: calc(100px + 51 * (100vw - 320px) / 880) 0;
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+
+        .develop-left, .build-right {
+            padding: 0;
+            text-align: center;
+        }
+
+        .block-one, .block-one-build {
+            margin-top: calc(150px + 50 * (100vw - 320px) / 880);
+        }
+
+        .block-two {
+            right: calc(-5px + -40 * (100vw - 320px) / 1350);
+            top: 80px;
+        }
+
+        .develop-right, .build-left {
+            padding-top: calc(50px + 50 * (100vw - 320px) / 880);
+        }
+
+        .develop-right {
+            .right-img {
+                &::before {
+                    height: 480px;
+                }
+            }
+        }
+
+        .build-left {
+            .build-left-img {
+                &::before {
+                    height: 480px;
+                }
+            }
+
+        } 
+
+        .block-two-build {
+            left: calc(-8px + -40 * (100vw - 320px) / 1350);
+            top: 80px;
+        }
+        
+       
+
+    }
+
+    @media (max-width: 575px) {
+
+        br {
+        display: none;
+    }
+
+            // footer 
+
+            .form-block_form-button {
+                font-size: calc(12px + 10 * ((100vw - 320px)/ 880));
+            }
+
+        .form-block {
+            input[type="email"]::-webkit-input-placeholder {
+                font-size: calc(12px + 10 * ((100vw - 320px)/ 880));
+            } 
+        }
+
+            .menu-two {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+    }
+
+    @media (max-width: 420.90px) {
+        .button-home {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            &_click-one {
+                font-size: calc(18px + 2 * ((100vw - 320px)/ 880));
+                margin-right: unset;
+                margin-bottom: 25px;
+            }
+    
+            &_click-two{
+                font-size: calc(18px + 2 * ((100vw - 320px)/ 880));
+            }
+        }
+
+        .form-block {
+            display: block;
+            input {
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid white;
+                margin-bottom: calc(18px + 2 * ((100vw - 320px)/ 880));
+            }
+
+            &_form-button {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+
+        .develop-right {
+            .right-img {
+                &::before {
+                    height: calc(335px + 145 * ((100vw - 320px)/ 880));
+                }
+            }
+        }
+
+        .build-left {
+            .build-left-img {
+                &::before {
+                    height: calc(335px + 145 * ((100vw - 320px)/ 880));
+                }
+            }
+
+        } 
+    }
