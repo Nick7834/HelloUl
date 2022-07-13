@@ -1,0 +1,27 @@
+@import "./base/reset";
+@import "./blocks/header";
+@import "./blocks/home";
+@import "./blocks/founded";
+@import "./blocks/testimonials";
+@import "./blocks/footer";
+@import "./blocks/media";
+
+
+::selection {
+  background: #90b9f4; 
+  color: #fff; 
+ }
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 1350px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
