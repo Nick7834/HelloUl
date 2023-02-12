@@ -12,9 +12,9 @@ burger?.addEventListener('click', () => {
 
 navLink.forEach(el => {
     el.addEventListener('click', () => {
-//         body?.classList.toggle('stop-scroll');
-        burger?.classList.toggle('burger--active');
-        nav?.classList.toggle('header-nav--click');
+        body?.classList.remove('stop-scroll');
+        burger?.classList.remove('burger--active');
+        nav?.classList.remove('header-nav--click');
     });
 });
 
